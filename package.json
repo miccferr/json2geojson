@@ -2,13 +2,12 @@
     "name": "json2geojson",
     "version": "0.1.0",
     "description": "Simple wrapper around npm's geojson module for quick-and-dirty data conversion.",
-    "main": "main.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "preferGlobal": true,
     "bin": {
-        "json2geojson": "./bin/app.js"
+        "json2geojson": "./bin/index.js"
     },
     "author": {
         "name": "Michele Ferretti ",
@@ -20,9 +19,7 @@
         "url": "https://github.com/miccferr/pointless"
     },
     "license": "MIT",
-    "devDependencies": {
-
-    },
+    "devDependencies": {},
     "dependencies": {
         "commander": "^2.8.1",
         "figlet": "^1.1.1",
