@@ -2,7 +2,6 @@
 
 var program = require('commander'),
     inquirer = require("inquirer"),
-    // data = require('./data/test_data.json'),
     GeoJSON = require('geojson'),
     figlet = require('figlet'),
     art = require('ascii-art'),
@@ -22,6 +21,7 @@ var questions = [{
 
 }];
 
+art.Figlet.fontPath = './node_modules/figlet/fonts/';
 
 /* Logo */
 art.font('POINTLESS', 'Isometric3', 'red', function(rendered) {
