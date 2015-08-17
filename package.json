@@ -15,6 +15,10 @@
         "email": "mic.ferretti@gmail.com",
         "url": "http://github.com/miccferr"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/miccferr/pointless"
+    },
     "license": "MIT",
     "devDependencies": {
         "ascii-art": "0.0.2-alpha"
