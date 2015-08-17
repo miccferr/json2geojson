@@ -6,7 +6,7 @@ An **almost** pointless CLI tool to convert Overpass API JSON into valid GeoJSON
 ```npm install``` the dependencies.
 
 ## Usage
-```json2geojson``` from bash, then provide the explicit paths of the files you wnat to convert/create
+```json2geojson``` from bash, then provide the explicit paths of the files you want to convert/create
 
 
 ***Soon to be availble as a ```npm```package.!***
