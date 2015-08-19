@@ -1,4 +1,4 @@
-# pointless
+# json2geojson
 An **almost** pointless CLI tool to convert Overpass API JSON into valid GeoJSON.  
 
 ## Installation
