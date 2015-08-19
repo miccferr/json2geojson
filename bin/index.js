@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var program = require('commander'),
+    path = require('path'),
     inquirer = require("inquirer"),
     GeoJSON = require('geojson'),
     figlet = require('figlet'),
@@ -21,10 +22,12 @@ var questions = [{
 
 }];
 
-art.Figlet.fontPath = './node_modules/figlet/fonts/';
+var dir = __dirname
+var oneLvlUpDir = dir.replace('/bin', '')
+art.Figlet.fontPath = oneLvlUpDir + "/node_modules/figlet/fonts/";
 
 /* Logo */
-art.font('POINTLESS', 'Isometric3', 'red', function(rendered) {
+art.font('JSONtoGEOJSON', 'Isometric3', 'red', function(rendered) {
     console.log(' * ---------------------------------------------------------------------------------------------------------------- * ');
     console.log(rendered);
 });
@@ -48,7 +51,7 @@ art.font('A silly conversion tool', 'Doom', 'cyan', function(rendered) {
                 console.log('***************CONVERSION DONE!*******************');
             });
         } catch (e) {
-            console.log("TRY THE EXPLICIT PATH, i.e.: /Volumes/hardDisk/Users/JohnDoe/data/test_data.json");
+            console.log("TRY THE EXPLICIT PATH, i.e.: /Volumes/hardDisk / Users / JohnDoe / data / test_data.json ");
             console.log(e);
 
         }
@@ -63,7 +66,7 @@ art.font('A silly conversion tool', 'Doom', 'cyan', function(rendered) {
 
 /*==========  Module Info  ==========*/
 program
-    .version('0.0.1')
+    .version('1.1.0')
     .description('initialize project configuration');
 
 program.on('--help', function() {
