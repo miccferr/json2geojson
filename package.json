@@ -16,7 +16,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/miccferr/pointless"
+        "url": "https://github.com/miccferr/json2geojson"
     },
     "license": "MIT",
     "devDependencies": {},

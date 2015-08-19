@@ -67,9 +67,10 @@ program
     .description('initialize project configuration');
 
 program.on('--help', function() {
-    console.log('  Examples:');
+    console.log('  This is a pointless converter, just provide, when asked, the explicit paths to the files to convert:');
     console.log('');
-    console.log('    $ json2geojson <path-to-json> <path-to-geojson>');
+    console.log('$ Q: Which is the file to convert? A:  <path-to-json>');
+    console.log('$ Q: Where should the geojson be saved? A: <path-to-geojson> ');
     console.log('');
 });
 
