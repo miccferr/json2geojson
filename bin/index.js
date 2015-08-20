@@ -4,6 +4,7 @@ var program = require('commander'),
     path = require('path'),
     inquirer = require("inquirer"),
     GeoJSON = require('geojson'),
+    osmtogeojson = require('osmtogeojson'),
     figlet = require('figlet'),
     art = require('ascii-art'),
     fs = require('fs');
@@ -41,12 +42,10 @@ art.font('A silly conversion tool', 'Doom', 'cyan', function(rendered) {
 
         try {
             var data = require(answers.jsonPath);
+            var geojson = osmtogeojson(data);
 
-            var parsed = GeoJSON.parse(data.elements, {
-                Point: ['lat', 'lng']
-            });
 
-            fs.writeFile(answers.gejsonPath, JSON.stringify(parsed), function(err) {
+            fs.writeFile(answers.gejsonPath, JSON.stringify(geojson), function(err) {
                 if (err) return console.log(err);
                 console.log('***************CONVERSION DONE!*******************');
             });

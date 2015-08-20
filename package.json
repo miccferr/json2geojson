@@ -1,30 +1,32 @@
 {
-    "name": "json2geojson",
-    "version": "1.1.0",
-    "description": "Simple wrapper around npm's geojson module for quick-and-dirty data conversion.",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "preferGlobal": true,
-    "bin": {
-        "json2geojson": "./bin/index.js"
-    },
-    "author": {
-        "name": "Michele Ferretti ",
-        "email": "mic.ferretti@gmail.com",
-        "url": "http://github.com/miccferr"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/miccferr/json2geojson"
-    },
-    "license": "MIT",
-    "devDependencies": {},
-    "dependencies": {
-        "commander": "^2.8.1",
-        "figlet": "^1.1.1",
-        "inquirer": "^0.9.0",
-        "geojson": "^0.2.1",
-        "ascii-art": "0.0.2-alpha"
-    }
+  "name": "json2geojson",
+  "version": "1.1.0",
+  "description": "Simple wrapper around npm's geojson module for quick-and-dirty data conversion.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "json2geojson": "./bin/index.js"
+  },
+  "author": {
+    "name": "Michele Ferretti ",
+    "email": "mic.ferretti@gmail.com",
+    "url": "http://github.com/miccferr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miccferr/json2geojson"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "osmtogeojson": "^2.2.5"
+  },
+  "dependencies": {
+    "commander": "^2.8.1",
+    "figlet": "^1.1.1",
+    "inquirer": "^0.9.0",
+    "geojson": "^0.2.1",
+    "ascii-art": "0.0.2-alpha"
+  }
 }
